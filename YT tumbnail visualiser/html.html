@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Thumbnail Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>YouTube Thumbnail Visualizer</h2>
+
+  <div class="inputs">
+    <label for="imageUpload" class="btn">Upload Thumbnail</label>
+    <input type="file" id="imageUpload" accept="image/*" hidden>
+
+    <label for="profileUpload" class="btn">Upload Profile Picture</label>
+    <input type="file" id="profileUpload" accept="image/*" hidden>
+  </div>
+
+  <div class="text-inputs">
+    <input type="text" id="title" placeholder="Video title">
+    <input type="text" id="youtuber" placeholder="Channel name">
+    <input type="text" id="views" placeholder="Views (e.g., 1.2M views)">
+    <input type="text" id="date" placeholder="Upload date (e.g., 2 days ago)">
+    <input type="text" id="length" placeholder="Video length (e.g., 10:24)">
+  </div>
+
+  <div id="thumbnail-preview">
+    <img id="thumbnail-image" src="" alt="Thumbnail Preview">
+    <div class="video-length" id="thumbnail-length"></div>
+  </div>
+
+  <div class="video-info">
+    <img class="channel-icon" id="profile-icon" src="" alt="Channel Icon">
+    <div class="info-text">
+      <div class="title" id="thumbnail-title">Your title here</div>
+      <div id="thumbnail-meta">Channel • 0 views • now</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
